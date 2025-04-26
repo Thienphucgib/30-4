@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỷ Niệm 50 Năm Ngày Giải Phóng Miền Nam,Thống Nhất Đất Nước(30/4/1975 - 30/4/2025)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #da251d;
+            --secondary-color: #ffff00;
+            --accent-color: #003399;
+            --text-light: #ffffff;
+            --text-dark: #111111;
+            --border-color: #ffcc00;
+            --gradient-start: #da251d;
+            --gradient-middle: #ee5a54;
+            --gradient-end: #ffcc00;
+          
+    --gradient-start: #ff4b2b; /* Màu đỏ */
+    --gradient-middle: #ff416c; /* Màu cam hoặc đỏ nhạt */
+    --gradient-end: #ff00b6; /* Màu hồng hoặc đỏ sáng */
+}
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+            background-color: #f8f8f8;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, rgba(255,255,240,1) 0%, rgba(255,255,245,1) 100%);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Định dạng nền gradient với hiệu ứng cờ bay phấp phới */
+.hero {
+    position: relative;
+    height: 100vh; /* Đảm bảo chiều cao bằng chiều cao của màn hình */
+    min-height: 600px;
+    overflow: hidden; /* Ẩn phần vượt ra ngoài */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+    background-size: 200% 200%; /* Tạo độ phân giải nền */
+    animation: flagWaving 5s ease-in-out infinite; /* Áp dụng hiệu ứng sóng */
+}
+
+/* Hiệu ứng sóng của cờ bay phấp phới */
+@keyframes flagWaving {
+    0% {
+        background-position: 0 0; /* Bắt đầu từ góc trái trên */
+    }
+    50% {
+        background-position: 100% 100%; /* Giữa điểm của nền */
+    }
+    100% {
+        background-position: 0 0; /* Trở lại góc trái trên */
+    }
+}
+
+/* Thêm hiệu ứng sóng nhẹ cho cờ */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1); /* Màu sáng cho hiệu ứng sóng */
+    transform-origin: center;
+    transform: rotate(45deg);
+    animation: flagWave 10s ease-in-out infinite; /* Hiệu ứng sóng chậm và lặp lại */
+}
+
+/* Hiệu ứng sóng chậm cho cờ */
+@keyframes flagWave {
+    0% {
+        transform: rotate(45deg) scale(1); /* Bắt đầu với kích thước gốc */
+    }
+    50% {
+        transform: rotate(45deg) scale(1.05); /* Phóng đại hiệu ứng sóng */
+    }
+    100% {
+        transform: rotate(45deg) scale(1); /* Trở lại kích thước ban đầu */
+    }
+}
+
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            text-align: center;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 700;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 4px;
+        }
+
+        /* Flag animation */
+        .flag-container {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .flag {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: waveFlag 6s infinite ease-in-out;
+            background: var(--primary-color);
+        }
+
+        .flag::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--secondary-color);
+            mask-image: url('https://cdn.jsdelivr.net/npm/country-flag-icons@1.5.7/3x2/VN.svg');
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url('https://cdn.jsdelivr.net/npm/country-flag-icons@1.5.7/3x2/VN.svg');
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+
+        @keyframes waveFlag {
+            0%, 100% {
+                transform: rotateY(-10deg) rotateX(5deg);
+            }
+            50% {
+                transform: rotateY(10deg) rotateX(-5deg);
+            }
+        }
+
+        /* 3D Cards */
+        .card-3d-container {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+
+        .card-3d {
+            transition: all 0.6s ease;
+            transform-style: preserve-3d;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #ffffff, #f5f5f5);
+            height: 100%;
+        }
+
+        .card-3d:hover {
+            transform: translateY(-20px) rotateX(10deg) rotateY(-10deg);
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 4px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            width: calc(50% - 40px);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            float: left;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            float: right;
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--gradient-middle));
+            border-radius: 50%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            right: -50px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -50px;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Fireworks effect */
+        .firework {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+            animation: firework 2s ease-out infinite;
+        }
+
+        @keyframes firework {
+            0% {
+                transform: translate(-50%, -50%);
+                width: 4px;
+                height: 4px;
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%);
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+
+        /* Image gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            height: 250px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(218, 37, 29, 0.9);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(218, 37, 29, 1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-link {
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Video section */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        /* Quote section */
+        .quote-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--gradient-middle));
+            color: white;
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 1.5;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .quote-author {
+            font-size: 1.2rem;
+            text-align: right;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        .quote-section::before, .quote-section::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .quote-section::before {
+            top: -100px;
+            left: -100px;
+        }
+
+        .quote-section::after {
+            bottom: -100px;
+            right: -100px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .footer-link {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            margin: 0 0.5rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gradient-middle);
+        }
+
+        /* Animation classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 80px);
+                float: right;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content::after, 
+            .timeline-item:nth-child(even) .timeline-content::after {
+                left: -40px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .navbar-container {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-link {
+                margin: 0.3rem 0;
+            }
+        }
+
+        /* Colors and effects */
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .card-3d-wrap {
+            perspective: 1500px;
+        }
+
+        .card-3d-wrapper {
+            transition: all 0.6s ease;
+            transform-style: preserve-3d;
+            position: relative;
+            height: 100%;
+        }
+
+        .card-front, .card-back {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.6s ease;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        .card-3d-wrap:hover .card-3d-wrapper {
+            transform: rotateY(180deg);
+        }
+
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine-effect::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 20%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(30deg);
+            transition: all 0.65s ease;
+        }
+
+        .shine-effect:hover::before {
+            left: 130%;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Audio player */
+        .audio-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .audio-player button {
+            background: var(--primary-color);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .audio-player button:hover {
+            background: var(--gradient-middle);
+            transform: scale(1.1);
+        }
+
+        .audio-info {
+            margin-left: 15px;
+        }
+
+        .audio-player .audio-title {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .audio-player .audio-artist {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Fireworks effect */
+        .pyro {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .pyro > .before, .pyro > .after {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+            animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+        }
+
+        .pyro > .after {
+            animation-delay: 1.25s, 1.25s, 1.25s;
+            animation-duration: 1.25s, 1.25s, 6.25s;
+        }
+
+        @keyframes bang {
+            to {
+                box-shadow: -70px -115.6666666667px #ff0015, -127px -177.6666666667px #00ff2b, 202px -349.6666666667px #3300ff, 219px -83.6666666667px #ff006f, 189px -66.6666666667px #00ff9d, 168px 75.3333333333px #ff4d00, -33px -290.6666666667px #00ff33, -76px -235.6666666667px #ff006a, -178px -413.6666666667px #ff9900, 239px 40.3333333333px #ff00e6, 184px -344.6666666667px #ff0099, 164px -121.6666666667px #0059ff, 238px -88.6666666667px #00ff33, 76px -133.6666666667px #bbff00, 203px -87.6666666667px #ff0073, -169px -362.6666666667px #ff0062, 225px -226.6666666667px #00ff0d, -96px -326.6666666667px #ff3300, -74px -369.6666666667px #ff1e00, -118px -131.6666666667px #ff0004, -89px -152.6666666667px #00e6ff, -13px -127.6666666667px #a6ff00, -115px -432.6666666667px #00ffaa, 145px -376.6666666667px #00ff2f, -124px -417.6666666667px #ff0022, -183px -397.6666666667px #eaff00, 104px 15.3333333333px #ff007b, 164px -226.6666666667px #ff008c, 241px -201.6666666667px #ffe100, 209px -93.6666666667px #ffea00, 222px -290.6666666667px #ffae00, -234px -128.6666666667px #ff00c4, 135px -75.6666666667px #91ff00, -176px -167.6666666667px #0051ff, 115px 56.3333333333px #66ff00, 214px -213.6666666667px #aaff00, -10px -154.6666666667px #ff00e1, 169px 22.3333333333px #ff00a2, -180px -267.6666666667px #ff2f00, 204px -373.6666666667px #00ffd5, -183px -228.6666666667px #91ff00, 143px -18.6666666667px #ff0099, 142px -134.6666666667px #001eff, 8px -274.6666666667px #00ff84, -191px -394.6666666667px #00ff4d, -29px -43.6666666667px #00ff37, 57px -323.6666666667px #0077ff, 88px -17.6666666667px #ff004d, 126px -30.6666666667px #ff0080, 221px -12.6666666667px #4800ff;
+            }
+        }
+
+        @keyframes gravity {
+            to {
+                transform: translateY(200px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes position {
+            0%, 19.9% {
+                margin-top: 10%;
+                margin-left: 40%;
+            }
+            20%, 39.9% {
+                margin-top: 40%;
+                margin-left: 30%;
+            }
+            40%, 59.9% {
+                margin-top: 20%;
+                margin-left: 70%;
+            }
+            60%, 79.9% {
+                margin-top: 30%;
+                margin-left: 20%;
+            }
+            80%, 99.9% {
+                margin-top: 30%;
+                margin-left: 80%;
+            }
+        }
+
+        /* Star effect */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        /* Ribbon */
+        .ribbon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .ribbon-content {
+            position: absolute;
+            top: 30px;
+            right: -35px;
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            padding: 7px 0;
+            width: 200px;
+            text-align: center;
+            transform: rotate(45deg);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Custom styles for the 3D flag */
+        .vietnam-flag-container {
+            perspective: 1000px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .vietnam-flag {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: waveVietnamFlag 8s infinite ease-in-out;
+            background: var(--primary-color);
+        }
+
+        .vietnam-flag::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: var(--secondary-color);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        @keyframes waveVietnamFlag {
+            0%, 100% {
+                transform: rotateY(-15deg) rotateX(8deg) rotateZ(2deg);
+            }
+            25% {
+                transform: rotateY(5deg) rotateX(-3deg) rotateZ(-1deg);
+            }
+            50% {
+                transform: rotateY(15deg) rotateX(8deg) rotateZ(0deg);
+            }
+            75% {
+                transform: rotateY(5deg) rotateX(-3deg) rotateZ(1deg);
+            }
+        }
+
+        /* 3D hover effect for images */
+        .hover-3d {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            transition: all 0.3s ease;
+        }
+
+        .hover-3d:hover {
+            transform: rotateX(10deg) rotateY(10deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Stars effect -->
+    <div class="stars" id="stars"></div>
+
+    
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1 class="text-white text-2xl font-bold">Việt Nam 30/4</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                <li><a href="#intro" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#history" class="nav-link">Lịch sử</a></li>
+                <li><a href="#gallery" class="nav-link">Hình ảnh</a></li>
+                <li><a href="#video" class="nav-link">Video</a></li>
+                <li><a href="#peace" class="nav-link">Hòa bình</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <div class="hero-content flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-white text-5xl md:text-6xl font-bold mb-6 animate__animated animate__fadeInDown">
+                Kỷ Niệm 50 Năm Ngày Giải Phóng Miền Nam, <br>Thống Nhất Đất Nước
+            </h1>
+            <h2 class="text-white text-3xl md:text-4xl font-semibold mb-8 animate__animated animate__fadeInUp">
+                30/4/1975 - 30/4/2025
+            </h2>
+            <div class="vietnam-flag-container animate__animated animate__zoomIn">
+                <div class="vietnam-flag"></div>
+            </div>
+            <div class="mt-12 animate__animated animate__fadeInUp">
+                <a href="#intro" class="bg-white text-red-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-300 hover:text-red-700 transition duration-300 transform hover:scale-105">
+                    Khám phá
+                </a>
+            </div>
+        </div>
+        <div class="ribbon">
+            <div class="ribbon-content">50 NĂM</div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="section-title fade-in">Giới Thiệu Ngày 30/4</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="fade-in">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Ngày 30/4/1975 là một mốc son chói lọi trong lịch sử đấu tranh giành độc lập, tự do của dân tộc Việt Nam. Đây là ngày mà quân và dân ta đã tiến hành thắng lợi Chiến dịch Hồ Chí Minh lịch sử, kết thúc cuộc kháng chiến chống Mỹ cứu nước, giải phóng hoàn toàn miền Nam, thống nhất đất nước.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Sau 50 năm, chúng ta tự hào nhìn lại hành trình đấu tranh anh dũng của dân tộc, tưởng nhớ đến sự hy sinh to lớn của các thế hệ cha anh để có được độc lập, tự do và thống nhất như ngày hôm nay.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Chiến thắng 30/4 không chỉ là biểu tượng của ý chí, sức mạnh và trí tuệ con người Việt Nam, mà còn là minh chứng cho tinh thần đoàn kết, sức mạnh đại đoàn kết toàn dân tộc, ý chí quật cường và lòng yêu nước nồng nàn của nhân dân ta.
+                    </p>
+                </div>
+                <div class="card-3d-wrap fade-in">
+                    <div class="card-3d-wrapper">
+                        <div class="card-front bg-red-600 p-8 flex flex-col justify-center items-center">
+                            <h3 class="text-white text-3xl font-bold mb-6">Ý Nghĩa Ngày Lễ</h3>
+                            <p class="text-white text-lg">
+                                Ngày 30/4 đánh dấu chiến thắng vẻ vang của toàn dân tộc trong sự nghiệp chống Mỹ cứu nước, đồng thời chấm dứt chế độ thực dân mới của Mỹ ở miền Nam Việt Nam, mở ra một kỷ nguyên mới cho đất nước: độc lập, thống nhất và đi lên xây dựng chủ nghĩa xã hội.
+                            </p>
+                        </div>
+                        <div class="card-back p-8 flex flex-col justify-center items-center">
+                            <h3 class="text-red-600 text-3xl font-bold mb-6">Chiến Dịch Hồ Chí Minh</h3>
+                            <p class="text-lg">
+                                Chiến dịch Hồ Chí Minh (26/4 - 30/4/1975) là chiến dịch quân sự cuối cùng của Quân Giải phóng miền Nam Việt Nam, kết thúc cuộc chiến tranh kéo dài hơn 20 năm, đánh dấu sự sụp đổ hoàn toàn của chế độ Việt Nam Cộng hòa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Timeline Section -->
+    <section id="history" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title fade-in">Dòng Thời Gian Lịch Sử</h2>
+            <div class="timeline">
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">8/4/1975</h3>
+                        <p>Bộ Chỉ huy Chiến dịch Giải phóng Sài Gòn - Gia Định được thành lập tại Lộc Ninh, do Đại tướng Văn Tiến Dũng làm Tư lệnh.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">14/4/1975</h3>
+                        <p>Bộ Chính trị quyết định đặt tên Chiến dịch là "Chiến dịch Hồ Chí Minh" thay cho tên gọi ban đầu "Chiến dịch Giải phóng Sài Gòn - Gia Định".</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">21/4/1975</h3>
+                        <p>Tổng thống Nguyễn Văn Thiệu từ chức, đánh dấu sự sụp đổ về chính trị của chế độ Việt Nam Cộng hòa.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">26/4/1975</h3>
+                        <p>17h00: Chiến dịch Hồ Chí Minh chính thức bắt đầu với cuộc pháo kích đồng loạt vào các mục tiêu quân sự xung quanh Sài Gòn.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">28/4/1975</h3>
+                        <p>Dương Văn Minh lên làm Tổng thống Việt Nam Cộng hòa trong nỗ lực cuối cùng để đàm phán với phía Cách mạng.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">29/4/1975</h3>
+                        <p>Các lực lượng Giải phóng tiến vào nội đô Sài Gòn từ nhiều hướng, đánh chiếm nhiều vị trí chiến lược quan trọng.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">30/4/1975 - 10h45</h3>
+                        <p>Xe tăng của Quân Giải phóng húc đổ cổng Dinh Độc Lập. Lá cờ Giải phóng tung bay trên nóc Dinh.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">30/4/1975 - 11h30</h3>
+                        <p>Tổng thống Dương Văn Minh tuyên bố đầu hàng vô điều kiện. Chiến dịch Hồ Chí Minh toàn thắng.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item clearfix fade-in">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">2/7/1976</h3>
+                        <p>Quốc hội thống nhất của cả nước họp phiên đầu tiên, quyết định lấy tên nước là Cộng hòa Xã hội Chủ nghĩa Việt Nam, Thủ đô là Hà Nội.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heroes Section -->
+    <section id="heroes" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="section-title fade-in">Các Vị Anh Hùng Dân Tộc</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Bác Hồ -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://tulieuvankien.dangcongsan.vn/Uploads/2018/7/5/11/20150406_091403_ChandungHCM%20(1890-1969).jpg" 
+                                alt="Chủ tịch Hồ Chí Minh" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Chủ tịch Hồ Chí Minh</h3>
+                        <p class="mb-4">Người sáng lập Đảng Cộng sản Việt Nam, Chủ tịch nước đầu tiên, lãnh tụ vĩ đại của dân tộc.</p>
+                        <p class="italic">"Không có gì quý hơn Độc lập, Tự do."</p>
+                    </div>
+                </div>
+    
+                <!-- Đại tướng Võ Nguyên Giáp -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Mr._Vo_Nguyen_Giap.jpg" 
+                                alt="Đại tướng Võ Nguyên Giáp" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Đại tướng Võ Nguyên Giáp</h3>
+                        <p class="mb-4">Vị tướng tài ba, người anh cả của Quân đội Nhân dân Việt Nam, người chỉ huy các chiến dịch lịch sử.</p>
+                        <p class="italic">"Thần tốc, thần tốc hơn nữa; táo bạo, táo bạo hơn nữa."</p>
+                    </div>
+                </div>
+    
+                <!-- Liệt sĩ anh hùng -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://danviet.mediacdn.vn/296231569849192448/2021/7/26/861-1627311394826688613437.jpg" 
+                                alt="Anh hùng liệt sĩ" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Các Anh hùng Liệt sĩ</h3>
+                        <p class="mb-4">Tưởng nhớ hàng triệu người con ưu tú đã hy sinh vì độc lập, tự do của Tổ quốc.</p>
+                        <p class="italic">"Máu đào của các vị tiền nhân đã đổi lấy độc lập cho dân tộc hôm nay."</p>
+                    </div>
+                </div>
+    
+                <!-- Trần Hưng Đạo -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/TranHungDao.jpg/800px-TranHungDao.jpg" 
+                                alt="Trần Hưng Đạo" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Trần Hưng Đạo</h3>
+                        <p class="mb-4">Vị tướng huyền thoại của dân tộc, người chỉ huy chiến thắng trong trận Bạch Đằng, bảo vệ Tổ quốc khỏi quân xâm lược.</p>
+                        <p class="italic">"Muốn sống, phải biết hy sinh."</p>
+                    </div>
+                </div>
+    
+                <!-- Nguyễn Trãi -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Nguyen_Trai.jpg/800px-Nguyen_Trai.jpg" 
+                                alt="Nguyễn Trãi" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Nguyễn Trãi</h3>
+                        <p class="mb-4">Nhà văn, nhà quân sự, chiến lược gia tài ba, người có công lớn trong việc giúp nhà Lê dựng lại đất nước sau chiến tranh.</p>
+                        <p class="italic">"Lòng trung với nước là điều tối thượng."</p>
+                    </div>
+                </div>
+    
+                <!-- Phan Bội Châu -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Phan_Boi_Chau_1921.jpg/800px-Phan_Boi_Chau_1921.jpg" 
+                                alt="Phan Bội Châu" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Phan Bội Châu</h3>
+                        <p class="mb-4">Nhà cách mạng, nhà thơ, và nhà trí thức vĩ đại, người đứng đầu phong trào Đông Du nhằm giành lại độc lập cho đất nước.</p>
+                        <p class="italic">"Tổ quốc không bao giờ quên những người đã hy sinh vì tự do."</p>
+                    </div>
+                </div>
+    
+                <!-- Nguyễn Ái Quốc -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Nguyen_Ai_Quoc_1920.jpg" 
+                                alt="Nguyễn Ái Quốc" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Nguyễn Ái Quốc</h3>
+                        <p class="mb-4">Tên gọi khi Chủ tịch Hồ Chí Minh hoạt động tại Pháp, đấu tranh cho độc lập của Việt Nam trong giai đoạn đầu.</p>
+                        <p class="italic">"Chỉ có thể tự cứu mình."</p>
+                    </div>
+                </div>
+    
+                <!-- Phan Châu Trinh -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Phan_Chau_Trinh.jpg/800px-Phan_Chau_Trinh.jpg" 
+                                alt="Phan Châu Trinh" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Phan Châu Trinh</h3>
+                        <p class="mb-4">Nhà cách mạng, nhà yêu nước, người đấu tranh cho nền giáo dục và cải cách xã hội, một tấm gương sáng về tư tưởng tiến bộ.</p>
+                        <p class="italic">"Chúng ta phải thay đổi toàn bộ phương thức sống."</p>
+                    </div>
+                </div>
+    
+                <!-- Lê Lợi -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Le_Loi.jpg" 
+                                alt="Lê Lợi" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Lê Lợi</h3>
+                        <p class="mb-4">Vị vua sáng lập triều Lê, lãnh đạo cuộc khởi nghĩa Lam Sơn, giành lại độc lập cho đất nước khỏi sự xâm lược của nhà Minh.</p>
+                        <p class="italic">"Giang sơn gấm vóc, phải bảo vệ."</p>
+                    </div>
+                </div>
+    
+                <!-- Hồ Xuân Hương -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Ho_Xuan_Huong.jpg" 
+                                alt="Hồ Xuân Hương" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Hồ Xuân Hương</h3>
+                        <p class="mb-4">Nhà thơ nổi tiếng trong lịch sử văn học Việt Nam, nổi bật với những bài thơ phản ánh cuộc sống và đấu tranh của phụ nữ.</p>
+                        <p class="italic">"Giới hạn không thể giữ tôi lại."</p>
+                    </div>
+                </div>
+    
+                <!-- Trần Quốc Toản -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tran_Quoc_Toan.jpg/800px-Tran_Quoc_Toan.jpg" 
+                                alt="Trần Quốc Toản" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Trần Quốc Toản</h3>
+                        <p class="mb-4">Người anh hùng trẻ tuổi trong cuộc kháng chiến chống quân xâm lược Nguyên-Mông, nổi bật với chiến thắng ở Vạn Kiếp.</p>
+                        <p class="italic">"Hãy chiến đấu đến cùng."</p>
+                    </div>
+                </div>
+    
+                <!-- Tôn Thất Thuyết -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Ton_That_Thuyet.jpg" 
+                                alt="Tôn Thất Thuyết" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Tôn Thất Thuyết</h3>
+                        <p class="mb-4">Quan trọng trong phong trào Cần Vương, đấu tranh chống Pháp, người góp phần trong cuộc chiến bảo vệ đất nước.</p>
+                        <p class="italic">"Kháng chiến là nhiệm vụ thiêng liêng."</p>
+                    </div>
+                </div>
+      <!-- Võ Thị Sáu -->
+      <div class="card-3d-container fade-in">
+        <div class="card-3d p-6 text-center">
+            <div class="hover-3d">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Vo_Thi_Sau.jpg" 
+                    alt="Võ Thị Sáu" 
+                    class="hero-img rounded-t-lg mb-4">
+            </div>
+            <h3 class="text-2xl font-bold mb-2 text-red-600">Võ Thị Sáu</h3>
+            <p class="mb-4">Nữ anh hùng, người chiến sĩ quả cảm của Mặt trận Dân tộc Giải phóng, hy sinh khi mới 19 tuổi, thể hiện lòng dũng cảm và tinh thần yêu nước.</p>
+            <p class="italic">"Tôi sẵn sàng hy sinh vì Tổ quốc."</p>
+        </div>
+    </div>
+      <!-- Lê Lợi -->
+      <div class="card-3d-container fade-in">
+        <div class="card-3d p-6 text-center">
+            <div class="hover-3d">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Le_Loi.jpg" 
+                    alt="Lê Lợi" 
+                    class="hero-img rounded-t-lg mb-4">
+            </div>
+            <h3 class="text-2xl font-bold mb-2 text-red-600">Lê Lợi</h3>
+            <p class="mb-4">Vị vua sáng lập triều Lê, lãnh đạo cuộc khởi nghĩa Lam Sơn, giành lại độc lập cho đất nước khỏi sự xâm lược của nhà Minh.</p>
+            <p class="italic">"Giang sơn gấm vóc, phải bảo vệ."</p>
+        </div>
+    </div>
+                <!-- Lê Duẩn -->
+                <div class="card-3d-container fade-in">
+                    <div class="card-3d p-6 text-center">
+                        <div class="hover-3d">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Le_Duan_1976.jpg/800px-Le_Duan_1976.jpg" 
+                                alt="Lê Duẩn" 
+                                class="hero-img rounded-t-lg mb-4">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-red-600">Lê Duẩn</h3>
+                        <p class="mb-4">Lãnh đạo nổi bật của Đảng Cộng sản Việt Nam, người đã đóng góp to lớn trong sự nghiệp giải phóng dân tộc và xây dựng đất nước.</p>
+                        <p class="italic">"Chúng ta sẽ chiến thắng."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<style>
+    /* Cải tiến chung cho ảnh */
+    .hero-img {
+        width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của thẻ cha */
+        height: auto; /* Giữ tỷ lệ ảnh */
+        object-fit: cover; /* Cắt ảnh để phù hợp với khung */
+    }
+
+    /* Responsive - Điều chỉnh cho thiết bị di động */
+    @media (max-width: 768px) {
+        .hero-img {
+            height: 250px; /* Giảm chiều cao của ảnh trên các màn hình nhỏ */
+        }
+
+        .card-3d {
+            padding: 16px; /* Giảm padding của thẻ card để tiết kiệm không gian */
+        }
+
+        .text-2xl {
+            font-size: 1.5rem; /* Giảm kích thước chữ tiêu đề cho di động */
+        }
+
+        .section-title {
+            font-size: 2rem; /* Giảm kích thước tiêu đề section cho di động */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-img {
+            height: 200px; /* Giảm chiều cao của ảnh trên màn hình rất nhỏ */
+        }
+
+        .card-3d {
+            padding: 12px; /* Giảm padding cho card */
+        }
+
+        .text-2xl {
+            font-size: 1.25rem; /* Giảm kích thước chữ tiêu đề cho màn hình nhỏ hơn */
+        }
+
+        .section-title {
+            font-size: 1.75rem; /* Giảm kích thước tiêu đề section cho màn hình nhỏ hơn */
+        }
+    }
+</style>
+
+    <!-- Quote Section -->
+    <section class="quote-section py-24 bg-gradient-to-r from-red-700 via-red-600 to-red-500">
+        <div class="container mx-auto px-4 text-center">
+            <div class="quote-slider max-w-3xl mx-auto p-6 bg-white bg-opacity-80 rounded-xl shadow-xl">
+                <div class="quote-text text-3xl italic text-gray-800 font-semibold transition-opacity duration-1000 opacity-0 fade-in">
+                    <p id="quote-content" class="text-xl"></p>
+                    <div class="quote-author mt-6 text-red-700 font-extrabold text-lg" id="quote-author"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<style>
+   /* Thêm font từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Hiệu ứng nền Gradient đỏ mạnh mẽ, gợi nhớ đến quốc kỳ */
+.quote-section {
+    background: linear-gradient(to right, #b20000, #ff3333, #ff6666);
+    position: relative;
+    overflow: hidden;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* Hiệu ứng cờ phấp phới */
+.quote-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150%;
+    height: 100%;
+    background: url('your-flag-image-url') no-repeat center center;
+    background-size: cover;
+    transform: rotate(-20deg);
+    animation: flagWave 10s ease-in-out infinite;
+}
+
+@keyframes flagWave {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+/* Khung Quote được làm mờ và có bóng đổ */
+.quote-slider {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Chữ Quote với hiệu ứng 3D */
+.quote-text {
+    font-family: 'Roboto', sans-serif; /* Đổi thành font Roboto */
+    color: #2d2d2d;
+    line-height: 1.8; /* Giãn dòng */
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 1s ease-out, opacity 1s ease-in-out;
+    padding: 10px 20px;
+}
+
+/* Chữ khi hiển thị */
+.quote-text.show {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(360deg); /* Quay 360 độ */
+}
+
+/* Hiệu ứng fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+/* Cải tiến chữ Quote */
+#quote-content {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Thêm bóng chữ */
+    line-height: 1.4; /* Giãn dòng cho chữ quote */
+}
+
+/* Tên tác giả hiển thị nổi bật */
+.quote-author {
+    font-family: 'Roboto', sans-serif; /* Đổi font tác giả */
+    font-size: 24px;
+    color: #ffcc00;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 1.6; /* Giãn dòng cho tên tác giả */
+}
+
+/* Hiệu ứng fade cho đoạn text */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+/* Responsive Design - Điều chỉnh cho thiết bị di động */
+@media (max-width: 768px) {
+    .quote-section {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .quote-slider {
+        max-width: 90%;
+        padding: 30px;
+    }
+
+    /* Giảm kích thước chữ cho di động */
+    #quote-content {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .quote-author {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-section {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .quote-slider {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    /* Giảm kích thước chữ cho di động nhỏ */
+    #quote-content {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .quote-author {
+        font-size: 18px;
+    }
+}
+
+</style>    
+<script>
+    const quotes = [
+    {
+        text: "Không có gì quý hơn độc lập, tự do. Vì độc lập, tự do, đồng bào ta đã kiên quyết đứng lên kháng chiến và đã hy sinh không sợ gian khổ, không sợ hy sinh.",
+        author: "– Chủ tịch Hồ Chí Minh –"
+    },
+    {
+        text: "Ngày 30/4/1975 là thắng lợi vĩ đại, kết thúc 30 năm chiến đấu kiên cường, giải phóng miền Nam, thống nhất đất nước.",
+        author: "– Trích Lịch sử Đảng CSVN –"
+    },
+    {
+        text: "Toàn thắng mùa xuân năm 1975 là biểu tượng sáng ngời của ý chí sắt đá, lòng yêu nước bất khuất và tinh thần đại đoàn kết dân tộc.",
+        author: "– Sách giáo khoa Lịch sử –"
+    },
+    {
+        text: "Chúng ta hôm nay phải sống, lao động và học tập xứng đáng với thế hệ cha anh đã ngã xuống cho đất nước trường tồn.",
+        author: "– Thông điệp đến thế hệ trẻ –"
+    },
+    {
+        text: "Việt Nam là một, dân tộc Việt Nam là một! Sông có thể cạn, núi có thể mòn, song chân lý ấy không bao giờ thay đổi.",
+        author: "– Hồ Chí Minh –"
+    }
+];
+
+let currentQuote = 0;
+
+function showQuote(index) {
+    const quoteContent = document.getElementById('quote-content');
+    const quoteAuthor = document.getElementById('quote-author');
+
+    quoteContent.classList.remove('show');
+    quoteAuthor.classList.remove('show');
+
+    setTimeout(() => {
+        quoteContent.textContent = quotes[index].text;
+        quoteAuthor.textContent = quotes[index].author;
+
+        quoteContent.classList.add('show');
+        quoteAuthor.classList.add('show');
+    }, 500);
+}
+
+// Khởi động ban đầu
+document.addEventListener("DOMContentLoaded", function () {
+    setInterval(() => {
+        currentQuote = (currentQuote + 1) % quotes.length;
+        showQuote(currentQuote);
+    }, 6000); // 6 giây đổi 1 quote
+
+    // Hiển thị quote đầu tiên
+    showQuote(currentQuote);
+});
+
+</script>
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="section-title fade-in">Thư Viện Hình Ảnh</h2>
+            <div class="gallery">
+                <!-- Image 1 -->
+                <div class="gallery-item fade-in">
+                    <img src="https://hochiminh.vn/Uploads/2019/1/2/10/Bac-Ho-viet-tho-tai-phu-CT.jpg" alt="Bác Hồ viết thơ">
+                    <div class="gallery-caption">Bác Hồ viết thơ tại Phủ Chủ tịch</div>
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="gallery-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/9c/BuiQuangThan.jpg/330px-BuiQuangThan.jpg" alt="Xe tăng 390 tiến vào Dinh Độc Lập">
+                    <div class="gallery-caption">Xe tăng 390 tiến vào Dinh Độc Lập trưa 30/4/1975</div>
+                </div>
+                
+                <!-- Image 3 -->
+                <div class="gallery-item fade-in">
+                    <img src="https://www.quangbinh.gov.vn/3cms/upload/qbportal/Image/TintucSuKien/2015/7/DT500cn.jpg" alt="Đại tướng Võ Nguyên Giáp">
+                    <div class="gallery-caption">Đại tướng Võ Nguyên Giáp</div>
+                </div>
+                
+                <!-- Image 4 -->
+                <div class="gallery-item fade-in">
+                    <img src="https://bna.1cdn.vn/2017/07/24/uploaded-dataimages-201707-original-_images1958649_vo_thi_sau.jpg" alt="Anh hùng liệt sĩ trẻ">
+                    <div class="gallery-caption">Anh hùng liệt sĩ Võ Thị Sáu</div>
+                </div>
+                
+                <!-- Image 5 -->
+                <div class="gallery-item fade-in">
+                    <img src="https://cdn.popsww.com/blog-kids/sites/3/2023/04/ve-tranh-chu-de-30-4.jpg" alt="Tranh vẽ thiếu nhi chủ đề 30/4">
+                    <div class="gallery-caption">Tranh vẽ thiếu nhi chủ đề 30/4</div>
+                </div>
+                
+                <!-- Image 6 -->
+                <div class="gallery-item fade-in">
+                    <img src="https://danviet.mediacdn.vn/296231569849192448/2021/7/26/869-1627311395162524521037.jpg" alt="Anh hùng liệt sĩ">
+                    <div class="gallery-caption">Anh hùng liệt sĩ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+ 
+<!-- Audio player section -->
+<div class="audio-player">
+    <button id="playButton">
+        <i class="fas fa-play"></i>
+    </button>
+    <div class="audio-info">
+        <div class="audio-title">Nhạc Đỏ Bắn Bỏ Cali</div>
+        <div class="audio-artist">Việt Nam Mãi Đỉnh</div>
+    </div>
+
+    <!-- Audio chính (phát mãi) -->
+    <audio id="audio1" loop>
+        <source src="https://ia801908.us.archive.org/15/items/duong-len-phia-truoc-remix-tien-minh-14697734/DuongLenPhiaTruocRemix-TienMinh-14697734.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Các audio phụ -->
+    <audio id="audio2">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio3">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio4">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio5">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<!-- Video Section -->
+<section id="video" class="py-20 px-6 bg-gradient-to-r from-red-700 to-yellow-500 text-white">
+    <div class="container mx-auto text-center">
+        <!-- Tiêu đề -->
+        <h2 class="section-title text-5xl font-extrabold text-center mb-12 animate__animated animate__fadeIn animate__delay-1s">
+            Chào Mừng Ngày Giải Phóng Miền Nam - 30/4
+        </h2>
+        <div class="max-w-4xl mx-auto animate__animated animate__fadeIn">
+            <!-- Khung video -->
+            <div class="video-container">
+                <!-- Nhúng video YouTube sử dụng iframe -->
+                <iframe id="videoIframe" class="w-full h-full border-none"
+                    src="https://www.youtube.com/embed/ecJSxFzvSKk?enablejsapi=1&autohide=1"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <!-- Mô tả video -->
+            <div class="mt-10 text-center">
+                <h3 class="text-3xl font-bold mb-6 text-yellow-300">Cờ Giải Phóng trên nóc Dinh Độc Lập ngày 30/4/1975</h3>
+                <p class="text-lg text-gray-200 mb-8">Khoảnh khắc lịch sử khi cờ Giải phóng tung bay trên nóc Dinh Độc Lập, đánh dấu sự kết thúc của cuộc chiến kéo dài và thống nhất đất nước. Đây là niềm tự hào, là mốc son chói lọi trong lịch sử dân tộc, mãi mãi khắc ghi trong trái tim mỗi người dân Việt Nam.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Định dạng video */
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 15px; /* Bo góc video */
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Đổ bóng đẹp cho video */
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+
+<script>
+    // Phát audio phụ trong một khoảng thời gian rồi tắt
+    function playAudioOnce(audio, delaySec, durationSec) {
+        setTimeout(() => {
+            audio.currentTime = 0;
+            audio.play();
+            setTimeout(() => {
+                audio.pause();
+                audio.currentTime = 0;
+            }, durationSec * 1000);
+        }, delaySec * 1000);
+    }
+
+    window.addEventListener('load', () => {
+        const audio1 = document.getElementById('audio1'); // phát mãi
+        const audio2 = document.getElementById('audio2');
+        const audio3 = document.getElementById('audio3');
+        const audio4 = document.getElementById('audio4');
+        const audio5 = document.getElementById('audio5');
+
+        // Phát audio chính
+        audio1.play().catch(err => {
+            console.log("Trình duyệt chặn phát tự động. Nhấn nút để bắt đầu.");
+        });
+
+        // Các audio phụ: phát sau X giây, dừng sau Y giây
+        playAudioOnce(audio2, 5, 6);   // phát sau 5s, chạy 6s
+        playAudioOnce(audio3, 15, 4);  // phát sau 15s, chạy 4s
+        playAudioOnce(audio4, 25, 7);  // phát sau 25s, chạy 7s
+        playAudioOnce(audio5, 40, 5);  // phát sau 40s, chạy 5s
+    });
+
+    // Điều khiển video thông qua API YouTube
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('videoIframe', {
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    // Khi video thay đổi trạng thái (play, pause, ended)
+    function onPlayerStateChange(event) {
+        const audio1 = document.getElementById('audio1');
+        if (event.data == YT.PlayerState.PLAYING) {
+            // Video bắt đầu phát
+            audio1.volume = 0.2; // Giảm âm lượng audio nền
+        } else if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
+            // Video bị tạm dừng hoặc kết thúc
+            audio1.volume = 1; // Phục hồi âm lượng audio nền
+        }
+    }
+
+    // Đảm bảo YouTube Iframe API được tải
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Phát video khi nhấn nút play
+    document.getElementById('playButton').addEventListener('click', () => {
+        // Kiểm tra nếu video chưa được tải, thì load video
+        if (player && player.getPlayerState() == YT.PlayerState.PAUSED) {
+            player.playVideo();
+        }
+    });
+</script>
+
+<!-- Phần Chào Mừng Hào Hùng -->
+<section id="celebration" class="py-16 bg-red-800 text-white">
+    <div class="container mx-auto text-center">
+        <h3 class="text-4xl font-extrabold mb-4">Hòa Mình Vào Niềm Vui Của Ngày Giải Phóng</h3>
+        <p class="text-xl mb-6">Đây là thời khắc để chúng ta tự hào về những người anh hùng đã hy sinh vì độc lập, tự do của dân tộc. Chúng ta ngẩng cao đầu, nhìn về tương lai với niềm tin và sức mạnh vô biên.</p>
+        <a href="#video" class="inline-block px-10 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-lg hover:bg-yellow-600 transition duration-300 transform hover:scale-105">Khám Phá Video Lịch Sử</a>
+    </div>
+</section>
+<style>/* Định dạng video */
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 15px; /* Bo góc video */
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Đổ bóng đẹp cho video */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    </style>
+
+   <!-- Peace and Unity Section -->
+<section id="peace" class="py-16 px-4 bg-gray-50">
+    <div class="container mx-auto">
+        <h2 class="section-title fade-in text-4xl font-bold text-center text-red-700 mb-12">Hòa Bình và Thống Nhất</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Cột 1 -->
+            <div class="fade-in">
+                <h3 class="text-2xl font-bold mb-4 text-red-600">Ý Nghĩa Thống Nhất Đất Nước</h3>
+                <p class="text-lg leading-relaxed mb-6">
+                    Chiến thắng 30/4/1975 là dấu mốc lịch sử chói lọi trong hành trình dựng nước và giữ nước của dân tộc Việt Nam. Không chỉ chấm dứt chiến tranh, ngày này còn mở ra kỷ nguyên độc lập, tự do, hòa bình và thống nhất cho cả dân tộc.
+                </p>
+                <p class="text-lg leading-relaxed mb-6">
+                    Từ đây, một Việt Nam thống nhất từ Lạng Sơn đến Cà Mau đã được tái hiện trọn vẹn trên bản đồ thế giới. Những dòng sông bị chia cắt được nối lại, những gia đình bị ly tán được đoàn tụ.
+                </p>
+                <p class="text-lg leading-relaxed mb-6">
+                    Ý nghĩa sâu sắc của thống nhất đất nước còn thể hiện ở việc chấm dứt chế độ thực dân kiểu mới, mở ra một thời kỳ độc lập thực sự, nơi quyền làm chủ thuộc về nhân dân.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Đó không chỉ là chiến thắng về quân sự, mà còn là chiến thắng của lòng yêu nước, của khát vọng độc lập – thống nhất, là minh chứng cho sức mạnh đại đoàn kết toàn dân tộc Việt Nam.
+                </p>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="fade-in">
+                <h3 class="text-2xl font-bold mb-4 text-red-600">Xây Dựng Đất Nước Hòa Bình</h3>
+                <p class="text-lg leading-relaxed mb-6">
+                    Sau thống nhất, Việt Nam phải đối mặt với muôn vàn khó khăn: nền kinh tế kiệt quệ, hậu quả chiến tranh kéo dài, cơ sở hạ tầng tàn phá nặng nề. Nhưng bằng tinh thần đoàn kết và ý chí quật cường, nhân dân Việt Nam đã không ngừng nỗ lực vươn lên.
+                </p>
+                <p class="text-lg leading-relaxed mb-6">
+                    Công cuộc "đổi mới" năm 1986 là bước ngoặt lớn, đưa Việt Nam từ một nước nghèo, bao cấp trở thành một nền kinh tế thị trường định hướng xã hội chủ nghĩa, phát triển nhanh và bền vững.
+                </p>
+                <p class="text-lg leading-relaxed mb-6">
+                    Hòa bình giúp người dân trở về với ruộng đồng, học đường, nhà máy. Những cây cầu mới, tuyến đường cao tốc, nhà cao tầng, khu công nghiệp... mọc lên khắp ba miền tổ quốc.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Ngày nay, Việt Nam không chỉ giữ vững chủ quyền, độc lập, mà còn là quốc gia tích cực, trách nhiệm trong cộng đồng quốc tế, đóng góp vào hòa bình, ổn định khu vực và toàn cầu.
+                </p>
+            </div>
+        </div>
+
+        <!-- Phần mở rộng dưới cùng -->
+        <div class="mt-16 fade-in text-center max-w-4xl mx-auto">
+            <h3 class="text-2xl font-semibold text-red-600 mb-4">Trách Nhiệm Của Thế Hệ Hôm Nay</h3>
+            <p class="text-lg leading-relaxed mb-6">
+                Hòa bình và thống nhất không phải là điều hiển nhiên – đó là kết quả của biết bao máu xương và hy sinh. Vì thế, thế hệ trẻ hôm nay cần nhận thức rõ vai trò của mình trong việc gìn giữ, bảo vệ thành quả đó.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Mỗi hành động tích cực, mỗi nỗ lực cống hiến, học tập, sáng tạo, sống nhân ái, sống có trách nhiệm... đều là cách để chúng ta tiếp tục viết nên những trang sử hào hùng, trong một đất nước hòa bình, thịnh vượng và trường tồn.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Kỷ Niệm 50 Năm Ngày Giải Phóng Miền Nam</h2>
+            <p class="mb-6">30/4/1975 - 30/4/2025</p>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Trang chủ</a>
+                <a href="#intro" class="footer-link">Giới thiệu</a>
+                <a href="#history" class="footer-link">Lịch sử</a>
+                <a href="#gallery" class="footer-link">Hình ảnh</a>
+                <a href="#video" class="footer-link">Video</a>
+                <a href="#peace" class="footer-link">Hòa bình</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="mt-8">&copy; 2025 Kỷ Niệm 50 Năm Ngày Giải Phóng Miền Nam</p>
+        </div>
+    </footer>
+
+    <script>
+        // Create stars
+        const starsContainer = document.getElementById('stars');
+        const starsCount = 100;
+        
+        for (let i = 0; i < starsCount; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            
+            const size = Math.random() * 3 + 1;
+            const x = Math.random() * 100;
+            const y = Math.random() * 100;
+            const delay = Math.random() * 2;
+            
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.left = `${x}%`;
+            star.style.top = `${y}%`;
+            star.style.animationDelay = `${delay}s`;
+            
+            starsContainer.appendChild(star);
+        }
+
+        // Audio player functionality
+        const audio = document.getElementById('backgroundMusic');
+        const playButton = document.getElementById('playButton');
+        const playIcon = document.getElementById('playIcon');
+
+        playButton.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-pause');
+            } else {
+                audio.pause();
+                playIcon.classList.remove('fa-pause');
+                playIcon.classList.add('fa-play');
+            }
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Navbar active link
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Create firework effect for hero section
+        function createFirework() {
+            const firework = document.createElement('div');
+            firework.classList.add('firework');
+            
+            const x = Math.random() * 100;
+            const y = Math.random() * 100;
+            const color = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            
+            firework.style.left = `${x}%`;
+            firework.style.top = `${y}%`;
+            firework.style.backgroundColor = color;
+            
+            document.querySelector('.pyro').appendChild(firework);
+            
+            setTimeout(() => {
+                firework.remove();
+            }, 2000);
+        }
+
+        setInterval(createFirework, 500);
+    </script>
+</body>
+</html>
